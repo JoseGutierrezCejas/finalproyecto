@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Room, Star, StarBorder } from "@material-ui/icons";
 import axios from "axios";
 import { format } from "timeago.js";
-import Register from "./components/Register";
+import Register from "./components/register";
 import Login from "./components/login";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
   const [desc, setDesc] = useState(null);
   const [star, setStar] = useState(0);
   const [viewport, setViewport] = useState({
-    latitude: 46,
-    longitude: 17,
+    latitude: 47.040182,
+    longitude: 17.071727,
     zoom: 4,
   });
   const [showRegister, setShowRegister] = useState(false);
